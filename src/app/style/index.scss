@@ -1,0 +1,45 @@
+@import "reset";
+@import "./variables/globals";
+@import "./themes/light";
+@import "./themes/dark";
+@import "./themes/orange";
+
+html,
+body {
+    height: 100vh;
+    font: var(--font-m);
+}
+
+li {
+    list-style-type: none;
+}
+
+.app {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.content-page {
+    padding-top: 32px;
+    display: flex;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--dark-bg-color);        /* цвет дорожки */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--light-bg-color);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid var(--text-color);  /* padding вокруг плашки */
+}
