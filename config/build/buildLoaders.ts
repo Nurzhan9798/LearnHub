@@ -46,14 +46,6 @@ export function buildLoaders(options: BuildOptions) {
       "sass-loader",
     ],
   };
-  // const styleLoader = {
-  //   test: /\.s[ac]ss$/i,
-  //   use: [
-  //     "style-loader",
-  //     'css-loader',
-  //     "sass-loader",
-  //   ],
-  // };
 
   return [styleLoader, assetLoader, tsLoader, svgrLoader];
 }

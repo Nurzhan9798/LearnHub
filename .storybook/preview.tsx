@@ -1,4 +1,7 @@
+import { Theme } from "../src/app/providers/ThemeProvider/ThemeContext";
 import type { Preview } from "@storybook/react";
+import { ThemeDecorator } from "../src/shared/config/storybook/ThemeDecorator";
+import "./../src/app/style/index.scss";
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +13,7 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 
 export default preview;
